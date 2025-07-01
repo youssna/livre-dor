@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS livre_or;
+USE livre_or;
+
+CREATE TABLE signatures (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nom VARCHAR(100) NOT NULL,
+    prenom VARCHAR(100) NOT NULL,
+    email VARCHAR(150) NOT NULL,
+    numero VARCHAR(20) NOT NULL,
+    message TEXT,
+    date_signature DATETIME DEFAULT CURRENT_TIMESTAMP
+);

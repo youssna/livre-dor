@@ -1,0 +1,115 @@
+/* Général */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fefefe;
+    color: #333;
+}
+
+/* Container principal qui prend toute la hauteur sauf footer */
+.main-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    padding-bottom: 70px; /* espace pour le footer fixe */
+    min-height: calc(100vh - 70px); /* hauteur totale - footer */
+}
+
+/* Header */
+.site-header {
+    background-color: #3f51b5; /* bleu indigo */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 26px;
+}
+
+.nav-bar {
+    margin-top: 10px;
+}
+
+.nav-bar a {
+    color: #ffeb3b;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-bar a:hover {
+    text-decoration: underline;
+}
+
+/* Footer fixé en bas */
+.site-footer {
+    background-color: #3f51b5;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;      /* FIXE en bas */
+    bottom: 0;            /* Collé au bas */
+    left: 0;              /* Bord gauche */
+    width: 100%;          /* Largeur pleine */
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+/* Formulaire */
+form {
+    background-color: #f1f1f1;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #3f51b5;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #303f9f;
+}
+
+/* Cartes de signature */
+div.signature-card {
+    background-color: #fafafa;
+    border-left: 4px solid #3f51b5;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.signature-card strong {
+    font-size: 16px;
+    color: #3f51b5;
+}
+
+.signature-card em {
+    display: block;
+    margin-top: 10px;
+    color: #444;
+    font-style: italic;
+}
